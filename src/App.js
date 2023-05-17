@@ -42,7 +42,7 @@ function App() {
   return (
     <>
       <Router>
-        <NavBar title="TextUtility" about="About" mode={mode} toggleMode={toggleMode} />
+        <NavBar title="TextWise" about="About" mode={mode} toggleMode={toggleMode} />
         <Alert alert={alert} />
         <div className="container my-3">
           <Switch>

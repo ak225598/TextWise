@@ -1,0 +1,135 @@
+.about-section {
+  width: 100%;
+  text-align: center;
+  padding: 80px;
+  background-color: #f1e7e7;
+  border: 1px solid black;
+}
+
+.about-section img {
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.about-section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.about-section p {
+  font-family: "Times New Roman", Times, serif;
+  text-shadow: #ec0c0c;
+  font-size: 25px;
+  color: #000000;
+}
+
+.contact-wrapper {
+  display: block;
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  color: rgb(255, 255, 255);
+  width: 100%;
+  position: relative;
+  background-color: #0f0e0e;
+}
+
+body {
+  background-color: #d8d8d8;
+}
+
+.social-menu ul {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.social-menu ul li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+.social-menu ul li .fa {
+  color: #000000;
+  font-size: 25px;
+  line-height: 50px;
+  transition: .5s;
+}
+
+.social-menu ul li .fa:hover {
+  color: #ffffff;
+}
+
+.social-menu ul li a {
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  text-align: center;
+  transition: 0.5s;
+  transform: translate(0, 0px);
+  box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+}
+
+.social-menu ul li a:hover {
+  transform: rotate(0deg) skew(0deg) translate(0, -10px);
+}
+
+.social-menu ul li:nth-child(1) a:hover {
+  background-color: #3b5999;
+}
+
+.social-menu ul li:nth-child(2) a:hover {
+  background-color: #e4405f;
+}
+
+.social-menu ul li:nth-child(3) a:hover {
+  background-color: #4f557a;
+}
+
+.social-menu ul li:nth-child(4) a:hover {
+  background-color: #8c84a35a;
+}
+
+.social-menu ul li:nth-child(5) a:hover {
+  background-color: #0077B5;
+}
+
+.social-menu ul {
+  margin-top: 50px;
+}
+
+.copyright {
+  margin-top: 120px;
+  text-align: center;
+}
+
+.fa-brands {
+  padding-top: 25px;
+}
+
+.fa-instagram {
+  color: #050101;
+
+}
+
+.fa-github {
+  color: black;
+}
+
+.fa-google {
+  color: #cd201f
+}
+
+.codingId{
+  color: #ec0c0c;
+  text-decoration:none;
+}

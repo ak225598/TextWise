@@ -1,10 +1,12 @@
 import React from "react";
 import PropTypes from 'prop-types'
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
+import './NavBar.css';
+
 export default function NavBar(props) {
   return (
     <>
-      <nav className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}>
+      <nav className={`navbar display-inline navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}>
         <div className="container-fluid">
           <a className="navbar-brand" href="/">
             {props.title}
@@ -20,7 +22,7 @@ export default function NavBar(props) {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <div className="collapse navbar-collapse " id="navbarSupportedContent">
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
                 <Link className="nav-link active" aria-current="page" to="/about">

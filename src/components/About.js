@@ -1,17 +1,19 @@
 import React, { useState } from 'react'
+import './About.css';
+import img from './AK.jpeg';
 
 export default function About() {
 
     const [myStyle, setMyStyle] = useState({
         color: 'black',
-        backgroundColor: 'white' 
+        backgroundColor: 'white'
 
-    } )
+    })
 
     const [btntext, setBtnText] = useState("Enable Dark Mode")
 
-    const toggleStyle =()=>{
-        if(myStyle.color=='black'){
+    const toggleStyle = () => {
+        if (myStyle.color == 'black') {
             setMyStyle({
                 color: 'white',
                 backgroundColor: 'black',
@@ -19,58 +21,39 @@ export default function About() {
             })
             setBtnText("Enable Light Mode")
         }
-        else{
+        else {
             setMyStyle({
                 color: 'black',
                 backgroundColor: 'white'
-            }) 
+            })
             setBtnText("Enable Dark Mode")
         }
     }
 
     return (
-        <>  
-            <div className="container" style={myStyle}>
-                <h1 className='my-2'>About Us</h1>
-                <div className="accordion" id="accordionExample" style={myStyle}>
-                    <div className="accordion-item">
-                        <h2 className="accordion-header">
-                            <button className="accordion-button" type="button" style={myStyle} data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                Accordion Item #1
-                            </button>
-                        </h2>
-                        <div id="collapseOne" className="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-                            <div className="accordion-body" style={myStyle}>
-                                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                            </div>
-                        </div>
-                    </div>
-                    <div className="accordion-item" style={myStyle}>
-                        <h2 className="accordion-header">
-                            <button className="accordion-button collapsed" style={myStyle} type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                Accordion Item #2
-                            </button>
-                        </h2>
-                        <div id="collapseTwo" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div className="accordion-body">
-                                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                            </div>
-                        </div>
-                    </div>
-                    <div className="accordion-item">
-                        <h2 className="accordion-header">
-                            <button className="accordion-button collapsed" style={myStyle} type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                Accordion Item #3
-                            </button>
-                        </h2>
-                        <div id="collapseThree" className="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div className="accordion-body" style={myStyle}>
-                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                            </div>
-                        </div>
-                    </div>
+        <>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <div class="about-section">
+                <h1>About Me</h1>
+                <img src={require('./AK.jpeg')} alt="Your Image" />
+                <p>I'm pursuing a Bachelor's degree in <b>Mechatronics Engineering</b>  at the <b>Indian Institute of Information Technology, Bhagalpur</b>, expecting to graduate in 2024.<br /><br /> I'm passionate about web development, exploring new frameworks, and have a strong foundation in data structures and algorithms. Practicing regularly on platforms like <b><a class="codingId" target="_blank" href="https://leetcode.com/ank225/">LeetCode</a> and <a class="codingId" target="_blank" href="https://auth.geeksforgeeks.org/user/ankit225598/">GeeksforGeeks</a></b> helps me improve and stay proficient in tackling various coding challenges. <br /><br />Combining my interdisciplinary background in Mechatronics, coding proficiency, and enthusiasm for web development, I aim to create innovative solutions that integrate hardware and software seamlessly.<br /> <br />With my commitment to constant learning, I'm ready to tackle challenging tasks and contribute to the ever-changing world of technology. Excited about the possibilities, I look forward to gaining practical experience and making a meaningful impact.</p>
+            </div>
+
+            <div class=" container contact-wrapper">
+                <h1 class="section-header">Reach me out!</h1>
+                <p class="contact-para mb-4"> Let's <span>Get in touch!</span> You can contact me anytime regarding anything, whether you have a query, feedback or just want to say Hi, I'll try my best to respond you as soon as possible. </p>
+                
+                <div class="social-menu">
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/ankitkumar225/" target="_blank"><i class="fa-brands fa-linkedin-in fa-xl"></i></a></li>
+                        <li><a href="https://www.instagram.com/ankit225598/" target="_blank"><i class="fa-brands fa-instagram fa-xl"></i></a></li>
+                        <li><a href="https://m.facebook.com/profile.php?id=100016218132388"target="_blank" ><i class="fa-brands fa-facebook fa-xl"></i></a></li>
+                        <li><a href="mailto:ankit225598@gmail.com" target="_blank"><i class="fa-brands fa-google fa-xl"></i></a></li>
+                        <li><a href="" target="_blank"><i class="fa-brands fa-github fa-xl"></i></a></li>
+                    </ul>
                 </div>
-                <button onClick={toggleStyle} className="btn btn-danger mx-1 my-3">{btntext}</button>
+
+                <footer class="copyright">&copy; Copyright @2023 <span>Ankit Kumar.</span></footer>
             </div>
         </>
 
