@@ -1,6 +1,27 @@
-# Getting Started with Create React App
+# TextWise
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+TextWise is a web application built using React that provides a range of text manipulation and analysis features.
+
+## Key Features
+
+- **Text Conversion:** Easily convert text to lowercase, uppercase, and other formats.
+- **Reading Time Estimation:** Get an estimated reading time for your text, helping you manage your reading schedule efficiently.
+- **Dark Mode:** Enjoy a visually appealing dark mode option for a delightful user experience.
+- **Copy Text:** Conveniently copy the processed text from the text box for easy sharing or further editing.
+
+Made with ❤️ using React.
+
+## About Me
+
+I'm Ankit Kumar, a Mechatronics Engineering student at the Indian Institute of Information Technology, Bhagalpur. I'm passionate about web development, exploring new frameworks, and have a strong foundation in data structures and algorithms.
+
+Feel free to explore TextWise and leverage its features to enhance your text manipulation and analysis tasks.
+
+---
+
+Feel free to personalize the content further according to your preferences and add any additional information you'd like to include.
+- **Linkedin:** https://www.linkedin.com/in/ankitkumar225/
+
 
 ## Available Scripts
 
