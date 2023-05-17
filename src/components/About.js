@@ -36,7 +36,7 @@ export default function About() {
             <div class="about-section">
                 <h1>About Textwise</h1>
                 <p class="aboutTextWise">
-                    TextUtil is a web application built using React that provides various text manipulation and analysis features.
+                    TextWise is a web application built using React that provides various text manipulation and analysis features.
                     Key Features:
                     <ol >
                         <li>Text conversion: Enables users to convert text to lowercase, uppercase, and other formats effortlessly.</li>
@@ -59,7 +59,7 @@ export default function About() {
                         <li><a href="https://www.instagram.com/ankit225598/" target="_blank"><i class="fa-brands fa-instagram fa-xl"></i></a></li>
                         <li><a href="https://m.facebook.com/profile.php?id=100016218132388" target="_blank" ><i class="fa-brands fa-facebook fa-xl"></i></a></li>
                         <li><a href="mailto:ankit225598@gmail.com" target="_blank"><i class="fa-brands fa-google fa-xl"></i></a></li>
-                        <li><a href="" target="_blank"><i class="fa-brands fa-github fa-xl"></i></a></li>
+                        <li><a href="https://github.com/ak225598" target="_blank"><i class="fa-brands fa-github fa-xl"></i></a></li>
                     </ul>
                 </div>
 
