@@ -16,6 +16,12 @@ export default function TextForm(props) {
         props.showAlert("Converted to Lowercase", "Success")
     }
 
+    const CapitalizeEachWord = () => {
+        let newText = text.replace(/\b\w/g, (match) => match.toUpperCase());
+        setText(newText)
+        props.showAlert("Capitalize Each Word", "Success")
+    }
+
     const handleClearClick = () => {
         let newText = " ";
         setText(newText)
@@ -46,10 +52,11 @@ export default function TextForm(props) {
             <div className="container" style={{ color: props.mode === 'light' ? 'black' : 'white' }}>
                 <h1 class="head1">{props.heading}</h1>
                 <div className="mb-3">
-                    <textarea className="form-control" value={text} onChange={handleOnChange} id="myBox" rows="8" style={{ backgroundColor: props.mode === 'light' ? 'white' : 'black', color: props.mode === 'light' ? 'black' : 'white' }}></textarea>
+                    <textarea className="form-control my-3 border-2 rounded border-primary " value={text} onChange={handleOnChange} id="myBox" rows="8" style={{ backgroundColor: props.mode === 'light' ? 'white' : 'black', color: props.mode === 'light' ? 'black' : 'white' }}></textarea>
                 </div>
                 <button className="btn btn-success mx-1 my-2" onClick={handleUpClick}>Convert to UpperCase</button>
                 <button className="btn btn-success mx-2 my-2" onClick={handleLowClick}>Convert to LowerCase</button>
+                <button className="btn btn-success mx-2 my-2" onClick={CapitalizeEachWord}>Capitalize Each Word</button>
                 <button className="btn btn-danger mx-2 my-2" onClick={handleExtraSpace}>Clear Space</button>
                 <button className="btn btn-danger mx-2 my-2" onClick={handleCopy}>Copy text</button>
                 <button className="btn btn-danger mx-2 my-2" onClick={handleClearClick}>Clear text</button>
@@ -62,7 +69,7 @@ export default function TextForm(props) {
                 <h2 className="my-2 preview ">Preview</h2>
                 <p>{text.length === 0 ? "Enter some Text in the Text for Preview" : text}</p>
                 <div>
-                    <footer class="copyright">
+                    <footer class="copyright" >
                         &copy; 2023 Ankit Kumar
                     </footer>
                 </div>

@@ -50,7 +50,7 @@ function App() {
               <About/>
             </Route>
             <Route path="/">
-              <TextForm heading="Enter the text to analyse below" mode={mode} showAlert={showAlert} />
+              <TextForm heading=" Enter Text and Select Case Format" mode={mode} showAlert={showAlert} />
             </Route>
           </Switch>
         </div>
