@@ -5,6 +5,7 @@ import TextForm from './components/TextForm';
 import About from './components/About';
 import React, { useState } from 'react';
 import Alert from './components/Alert';
+import Footer from './components/footer';
 import { type } from '@testing-library/user-event/dist/type';
 
 import {
@@ -44,7 +45,7 @@ function App() {
       <Router>
         <NavBar title="TextWise" about="About" mode={mode} toggleMode={toggleMode} />
         <Alert alert={alert} />
-        <div className="container my-3">
+        <div className="container my-1">
           <Switch>
             <Route path="/about">
               <About/>
@@ -54,6 +55,7 @@ function App() {
             </Route>
           </Switch>
         </div>
+        <Footer/>
       </Router>
     </>
   );
