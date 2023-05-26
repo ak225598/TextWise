@@ -5,7 +5,7 @@ export default function Footer(){
     return(
         <>
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-            <div class="container contact-wrapper">
+            <div class="container contact-wrapper my-3">
                 <div class="contact-content">
                     <h1 class="section-header">Reach out to me!</h1>
                     <p class="contact-para mb-4">Let's get in touch! Feel free to contact me anytime for queries, feedback, or just to say hi. I'll do my best to respond as soon as possible.</p>
