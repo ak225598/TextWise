@@ -48,7 +48,7 @@ function App() {
         <div className="container my-1">
           <Switch>
             <Route path="/about">
-              <About/>
+              <About mode = {mode} toggleMode={toggleMode}/>
             </Route>
             <Route path="/">
               <TextForm heading=" Enter Text and Select Case Format" mode={mode} showAlert={showAlert} />
