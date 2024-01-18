@@ -1,6 +1,5 @@
 {
-  "homepage": "https://ak225598.github.io/TextWise",
-  "name": "textutils",
+  "name": "textwise",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

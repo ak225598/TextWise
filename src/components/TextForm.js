@@ -63,7 +63,7 @@ export default function TextForm(props) {
 
             </div>
             <div className="ak my-3 border-primary" style={{ color: props.mode === 'light' ? 'black' : 'white' }}>
-                <h1 className={` text-summary text-${props.mode === 'light' ? 'white' : 'light'}`}>Your text summary</h1>
+                <h1 className={` text-summary text-${props.mode === 'light' ? 'white' : 'light'}`}>Text Analytics and Reading Time Overview</h1>
                 <p>{text.split(/\s+/).filter((element) => { return element.length !== 0 }).length} words, {text.length}characters</p>
                 <p>{(0.005 * text.split(/\s+/).filter((element) => { return element.length !== 0 }).length).toFixed(2)} Minutes to read</p>
                 <h2 className="my-2 preview ">Preview</h2>
