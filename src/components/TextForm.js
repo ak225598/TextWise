@@ -41,7 +41,7 @@ export default function TextForm(props) {
     }
 
     const handleExtraSpace = () => {
-        let newText = text.split(/[ ]+/)
+        let newText = text.split(/[\s]+/g)
         setText(newText.join(" "))
         props.showAlert("Cleared Extra spaces", "Success")
     }
@@ -64,10 +64,10 @@ export default function TextForm(props) {
             </div>
             <div className="ak my-3 border-primary" style={{ color: props.mode === 'light' ? 'black' : 'white' }}>
                 <h1 className={` text-summary text-${props.mode === 'light' ? 'white' : 'light'}`}>Your text summary</h1>
-                <p>{text.split(" ").length} words, {text.length}characters</p>
-                <p>{0.008 * text.split(" ").length} Minutes to read</p>
+                <p>{text.split(/\s+/).filter((element) => { return element.length !== 0 }).length} words, {text.length}characters</p>
+                <p>{(0.005 * text.split(/\s+/).filter((element) => { return element.length !== 0 }).length).toFixed(2)} Minutes to read</p>
                 <h2 className="my-2 preview ">Preview</h2>
-                <p>{text.length === 0 ? "Enter some Text in the Text for Preview" : text}</p>
+                <p>{text.length === 0 ? "Nothing to preview" : text}</p>
             </div>
         </>
 
