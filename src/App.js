@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import NavBar from './components/NavBar';
 import TextForm from './components/TextForm';
@@ -6,7 +5,6 @@ import About from './components/About';
 import React, { useState } from 'react';
 import Alert from './components/Alert';
 import Footer from './components/footer';
-import { type } from '@testing-library/user-event/dist/type';
 
 import {
   BrowserRouter as Router,
@@ -51,7 +49,7 @@ function App() {
               <About mode = {mode} toggleMode={toggleMode}/>
             </Route>
             <Route path="/">
-              <TextForm heading=" Enter Text and Select Case Format" mode={mode} showAlert={showAlert} />
+              <TextForm heading="Format text and multilingual translate" mode={mode} showAlert={showAlert} />
             </Route>
           </Switch>
         </div>
